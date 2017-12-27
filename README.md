@@ -10,7 +10,7 @@ http://www.holyhi.cn/demo/zlUploader
 --
 1. 下载[webUploader](http://fex.baidu.com/webuploader/)或者使用[cdn](http://www.bootcdn.cn/webuploader/)，将webUploader.js、webUploader.css和Uploader.swf文件引入项目页面内，详细可参考webUploader[官网](http://fex.baidu.com/webuploader/getting-started.html)。
 
-2. [下载](http://jquery.com/download/)或者使用[cdn](http://www.bootcdn.cn/jquery/)将jquery文件引入项目页面内，注意，jquery文件必须放置在所有使用到jquery功能的js文件前方。
+2. 下载[jquery](http://jquery.com/download/)或者使用[cdn](http://www.bootcdn.cn/jquery/)将jquery文件引入项目页面内，注意，jquery文件必须放置在所有使用到jquery功能的js文件前方。
 
 3. 给zlUploader提供一个载体div。
 ```html
