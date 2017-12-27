@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <meta name="renderer" content="webkit">
+
+        <link href="https://cdn.bootcss.com/webuploader/0.1.1/webuploader.css" rel="stylesheet">
+
+        <link href="zlUploader.css" rel="stylesheet">
+
+        <title>Demo</title>
+
+        <style>
+            #webUploaderBox {
+                width: 50vw;
+                height: 50vh;
+                margin: 50px auto;
+                border: 1px solid #555;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="webUploaderBox"></div>
+    </body>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/webuploader/0.1.1/webuploader.min.js"></script>
+
+    <script src="zlUploader.js"></script>
+
+    <script>
+    $(function() {
+        var zlUploader = $("#webUploaderBox").zlUploader({
+            server: true,
+            serverUrl: "/",
+            formData: {
+                _dc: Date.now()
+            },
+            zlUploadSuccess: function(event, response) {
+                console.log(response);
+            },
+            zlUploadError: function(event, error) {
+                console.log(error);
+            }
+        });
+    });
+
+
+    </script>
+</html>
