@@ -47,7 +47,7 @@ zlOnUploadComplete | none | 无论上传成功或者失败都触发该事件
 调用方法
 
 ```javascript
- $('#uploaderBox').zlUploader('behavior name', argumentOne, argumentTwo);
+ $('selector').zlUploader('behavior name', argumentOne, argumentTwo);
 ```
 
 名称 | 描述
