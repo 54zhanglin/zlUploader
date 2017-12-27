@@ -32,15 +32,16 @@ http://www.holyhi.cn/demo/zlUploader
       serverUrl: "/upload"
   });
 ```
-名称 | 类型 | 默认 | 必须 | 描述
-----|----|----|----|----
-addImgUrl | String | none | 否 | 初始化默认添加标志图片
-defaultImg | String | none | 否 | 上传文件时，没有默认图片时替代的图片，默认为空白图片，可以覆盖。
-server | Boolean | false | 否 | 是否默认上传服务器。
-serverUrl | String | '/' | 否 | 默认上传服务器地址，只有server设置为true时候才会生效。
-size | Number | 100 | 否 | 图片尺寸，当前默认为宽高一样。
-type | String | "image" | 否 | 上传类型, "image" or "file"。
-uploadNum | Number | 5 | 否 | 上传文件数目, 默认为5。
+名称 | 类型 | 默认 | 描述
+----|----|----|----
+addImgUrl | String | none | 初始化默认添加标志图片
+defaultImg | String | none | 上传文件时，没有默认图片时替代的图片，默认为空白图片，可以覆盖。
+server | Boolean | false | 是否默认上传服务器。
+serverUrl | String | '/' | 默认上传服务器地址，只有server设置为true时候才会生效。
+size | Number | 100 | 图片尺寸，当前默认为宽高一样。
+type | String | "image" | 上传类型, "image" or "file"。
+uploadNum | Number | 5 | 上传文件数目, 默认为5。
+formData | Object | {} | 上传时附加的参数，格式为key:value
 
 
 ## 事件
