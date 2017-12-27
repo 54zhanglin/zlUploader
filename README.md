@@ -20,7 +20,8 @@ http://www.holyhi.cn/demo/zlUploader
 ```javascript
   //初始化
   $("#zlUploaderBox").zlUploader();
-  //可以传入参数
+  
+  //也可以传入参数
   $("#zlUploaderBox").zlUploader({
     uploadNum: 1
   });
