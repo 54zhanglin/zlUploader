@@ -25,6 +25,13 @@ http://www.holyhi.cn/demo/zlUploader
 ```
 
 ## 参数
+调用方法
+```javascript
+  $(selector).zlUploader({
+      server: true,
+      serverUrl: "/upload"
+  });
+```
 名称 | 类型 | 默认 | 必须 | 描述
 ----|----|----|----|----
 addImgUrl | String | none | 否 | 初始化默认添加标志图片
@@ -37,6 +44,14 @@ uploadNum | Number | 5 | 否 | 上传文件数目, 默认为5。
 
 
 ## 事件
+调用方法
+```javascript
+ $("selector").zlUploader({
+     zlOnSuccess: function(response) {
+         console.log("success");
+     }
+ });
+```
 名称 | 参数 | 描述
 ----|----|----
 zlOnSuccess | responce | 成功上传后触发，返回响应response
