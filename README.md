@@ -27,8 +27,8 @@ http://www.holyhi.cn/demo/zlUploader
 ## 参数
 名称 | 类型 | 默认 | 必须 | 描述
 ----|----|----|----|----
-addImgUrl | String | | 否 | 初始化默认添加标志图片
-defaultImg | String |  | 否 | 上传文件时，没有默认图片时替代的图片，默认为空白图片，可以覆盖。
+addImgUrl | String | none | 否 | 初始化默认添加标志图片
+defaultImg | String | none | 否 | 上传文件时，没有默认图片时替代的图片，默认为空白图片，可以覆盖。
 server | Boolean | false | 否 | 是否默认上传服务器。
 serverUrl | String | '/' | 否 | 默认上传服务器地址，只有server设置为true时候才会生效。
 size | Number | 100 | 否 | 图片尺寸，当前默认为宽高一样。
@@ -37,9 +37,22 @@ uploadNum | Number | 5 | 否 | 上传文件数目, 默认为5。
 
 
 ## 事件
+名称 | 参数 | 描述
+----|----|----
+zlOnSuccess | responce | 成功上传后触发，返回响应response
+zlOnError | reason | 上传失败后触发，响应失败结果
+zlOnUploadComplete | none | 无论上传成功或者失败都触发该事件
 
 ## 方法
+调用方法
 
+```javascript
+ $('#uploaderBox').zlUploader('behavior name', argumentOne, argumentTwo);
+```
+
+名称 | 描述
+----|----
+getOptions | 获取上传最终配置信息
 
 # License
 MIT
