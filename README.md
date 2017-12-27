@@ -25,7 +25,6 @@ http://www.holyhi.cn/demo/zlUploader
 ```
 
 ## 参数
-调用方法
 ```javascript
   $(selector).zlUploader({
       server: true,
@@ -45,7 +44,6 @@ formData | Object | {} | 上传时附加的参数，格式为key:value
 
 
 ## 事件
-调用方法
 ```javascript
  $("selector").zlUploader({
      zlOnSuccess: function(response) {
@@ -60,8 +58,6 @@ zlOnError | reason | 上传失败后触发，响应失败结果
 zlOnUploadComplete | none | 无论上传成功或者失败都触发该事件
 
 ## 方法
-调用方法
-
 ```javascript
  $('selector').zlUploader('behavior name', argumentOne, argumentTwo);
 ```
