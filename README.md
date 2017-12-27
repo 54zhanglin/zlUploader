@@ -26,7 +26,7 @@ http://www.holyhi.cn/demo/zlUploader
 
 ## 参数
 ```javascript
-  $(selector).zlUploader({
+  $('selector').zlUploader({
       server: true,
       serverUrl: "/upload"
   });
@@ -45,7 +45,7 @@ formData | Object | {} | 上传时附加的参数，格式为key:value
 
 ## 事件
 ```javascript
- $("selector").zlUploader({
+ $('selector').zlUploader({
      zlOnSuccess: function(response) {
          console.log("success");
      }
